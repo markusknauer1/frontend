@@ -4,6 +4,7 @@ import { InviteGuestModal } from "./modals/invite-guest-modal";
 import { ConfirmTripmodal } from "./modals/confirm-trip-modal";
 import { DestinationAndDareStep } from "./steps/destination-and-date-step";
 import { InviteGuestStep } from "./steps/invite-guests-step";
+import { Footer } from "../componentes-do-html/footer";
 
 export function CreateTripPage() {
   const navigate = useNavigate();
@@ -123,17 +124,8 @@ export function CreateTripPage() {
        />
       )}
       
-      <div className="fixed bottom-0 left-0 w-[100%] flex justify-center">
-        <p>
-          built by <a href="#">Markus Knauer</a> through{" "}
-          <a
-            className="decoration-none underline font-semibold"
-            href="https://app.rocketseat.com.br/"
-          >
-            RocketSeat
-          </a>
-        </p>
-      </div>
+     
+      <Footer />
     </div>
   );
 }
